@@ -1,5 +1,20 @@
 {
   "projects": {
     "default": "prototyp-dev-meetings"
+  },
+  "targets": {
+    "prototyp-dev-meetings": {
+      "hosting": {
+        "production": [
+          "prototyp-dev-meetings"
+        ],
+        "test": [
+          "prototyp-dev-meetings-test"
+        ],
+        "staging": [
+          "prototyp-dev-meetings-staging"
+        ]
+      }
+    }
   }
 }

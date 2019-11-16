@@ -37,7 +37,7 @@ commands:
     steps:
       - run:
           name: Firebase Deploy
-          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN --non-interactive --only hosting:<< parameters.env >>"
+          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --non-interactive --only hosting:<< parameters.env >>
 
 jobs:
   build-deploy-test:
